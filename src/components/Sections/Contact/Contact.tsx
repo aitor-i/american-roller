@@ -1,3 +1,7 @@
+import dynamic from 'next/dynamic'
+
+const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false })
+
 export default function Contact() {
   return (
     <section className="w-full py-12 md:py-24">
@@ -10,8 +14,7 @@ export default function Contact() {
           </p>
         </div>
         <div className="mx-auto w-full max-w-sm space-y-2">
-          <form className="space-y-4">
-          </form>
+          <ContactForm />
         </div>
       </div>
     </section>
