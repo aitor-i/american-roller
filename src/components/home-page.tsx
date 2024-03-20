@@ -3,6 +3,7 @@ import Presentation from "./Sections/Presentation/Presentation"
 import Services from "./Sections/Services/Services"
 import Testimonial from "./Sections/Testimonial/Testimonial"
 import Contact from "./Sections/Contact/Contact"
+import Footer from "./Footer/Footer"
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
         <Testimonial />
         <Contact />
       </main>
+      <Footer />
     </div>
   )
 }
