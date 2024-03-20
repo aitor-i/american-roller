@@ -6,97 +6,17 @@ import Link from "next/link"
 import { Input } from "@/components/ui/input"
 import { Textarea } from "@/components/ui/textarea"
 import { Button } from "@/components/ui/button"
+import Header from "./Header/Header"
+import Presentation from "./Sections/Presentation/Presentation"
+import Services from "./Sections/Services/Services"
 
 export function HomePage() {
   return (
     <div className="flex flex-col min-h-[100dvh]">
-      <header className="flex items-center justify-center h-24 gap-4 px-4 text-sm md:gap-6 lg:px-6">
-        <div className="flex items-center gap-2">
-          <WrenchIcon className="h-6 w-6" />
-          <span className="font-semibold">Plumbing Services</span>
-        </div>
-        <div className="ml-auto flex items-center gap-2">
-          <PhoneCallIcon className="h-4 w-4 opacity-50" />
-          <span className="hidden md:inline">Call us: </span>
-          <span className="font-semibold">1-800-123-4567</span>
-        </div>
-      </header>
       <main className="flex-1">
-        <section className="w-full py-6 md:py-12 lg:py-16 xl:py-24">
-          <div className="container flex flex-col items-center gap-4 px-4 text-center md:gap-10 lg:gap-16 lg:flex-row lg:items-start lg:justify-center xl:gap-20">
-            <img
-              alt="Plumber"
-              className="mx-auto aspect-square overflow-hidden rounded-full object-cover border-4 border-gray-100 lg:w-96 xl:w-120 dark:border-gray-800"
-              height="400"
-              src="/placeholder.svg"
-              width="400"
-            />
-            <div className="space-y-4">
-              <div className="space-y-2">
-                <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">Your Local Plumber</h1>
-                <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                  Providing reliable plumbing services to your community. We fix leaks, clear clogs, and keep your water
-                  running.
-                </p>
-              </div>
-              <div className="flex flex-col gap-2 min-[400px]:flex-row lg:gap-4">
-                <Link
-                  className="inline-flex h-10 items-center justify-center rounded-md border border-gray-200 bg-white px-8 text-sm font-medium shadow-sm transition-colors hover:bg-gray-100 hover:text-gray-900 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
-                  href="#"
-                >
-                  Contact Us
-                </Link>
-              </div>
-            </div>
-          </div>
-        </section>
-        <section className="w-full py-12 md:py-24 bg-gray-100 dark:bg-gray-800">
-          <div className="container grid items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
-            <div className="space-y-4">
-              <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Our Services</h2>
-              <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
-                We offer a wide range of plumbing services to meet your needs. Let us help you with your next project or
-                repair.
-              </p>
-            </div>
-            <ul className="grid gap-6 sm:grid-cols-2">
-              <li>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Pipe Repair</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    We can fix leaks and repair damaged pipes to ensure your plumbing system is working properly.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Drain Cleaning</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Let us clear clogs and remove debris from your drains to prevent backups and keep your pipes flowing
-                    smoothly.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Water Heater Installation</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Upgrade to a new water heater with our professional installation services. Enjoy hot water on
-                    demand.
-                  </p>
-                </div>
-              </li>
-              <li>
-                <div className="space-y-2">
-                  <h3 className="text-xl font-bold">Fixture Replacement</h3>
-                  <p className="text-gray-500 dark:text-gray-400">
-                    Update your kitchen or bathroom with new fixtures. We can install faucets, showers, and more.
-                  </p>
-                </div>
-              </li>
-            </ul>
-          </div>
-        </section>
+        <Header />
+        <Presentation />
+        <Services />
         <section className="w-full py-12 md:py-24">
           <div className="container grid items-center gap-10 px-4 md:px-6 lg:grid-cols-2 lg:gap-16">
             <div className="space-y-4">
@@ -191,23 +111,3 @@ function WrenchIcon(props) {
 }
 
 
-function PhoneCallIcon(props) {
-  return (
-    <svg
-      {...props}
-      xmlns="http://www.w3.org/2000/svg"
-      width="24"
-      height="24"
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="currentColor"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-    >
-      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
-      <path d="M14.05 2a9 9 0 0 1 8 7.94" />
-      <path d="M14.05 6A5 5 0 0 1 18 10" />
-    </svg>
-  )
-}
