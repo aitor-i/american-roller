@@ -4,6 +4,7 @@ import Services from "./Sections/Services/Services"
 import Testimonial from "./Sections/Testimonial/Testimonial"
 import Contact from "./Sections/Contact/Contact"
 import Footer from "./Footer/Footer"
+import Map from "./Sections/MapSection/Map"
 
 export function HomePage() {
   return (
@@ -14,6 +15,7 @@ export function HomePage() {
         <Services />
         <Testimonial />
         <Contact />
+        <Map />
       </main>
       <Footer />
     </div>
