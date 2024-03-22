@@ -17,6 +17,45 @@ export function BoldIcon(props: any) {
     </svg>
   )
 }
+export const LightningIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="50"
+    height="50"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <path d="M13 2L3 14h9l-1 8 10-12h-9z" /> {/* Lightning shape */}
+  </svg>
+);
+
+export const SunIcon = () => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width="50"
+    height="50"
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    <circle cx="12" cy="12" r="5" /> {/* Central body */}
+    <line x1="12" y1="1" x2="12" y2="3" /> {/* Top ray */}
+    <line x1="12" y1="21" x2="12" y2="23" /> {/* Bottom ray */}
+    <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" /> {/* Top-left ray */}
+    <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" /> {/* Bottom-right ray */}
+    <line x1="1" y1="12" x2="3" y2="12" /> {/* Left ray */}
+    <line x1="21" y1="12" x2="23" y2="12" /> {/* Right ray */}
+    <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" /> {/* Bottom-left ray */}
+    <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" /> {/* Top-right ray */}
+  </svg>
+);
 
 export function PhoneCallIcon(props: any) {
   return (
