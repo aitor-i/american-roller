@@ -110,7 +110,7 @@ export default function ContactForm() {
         {fetchingStatus === 'loading' ? <div className='w-full flex justify-center'>
           <SettingsIcon className='spinner' />
         </div> :
-          <Button className='bg-blue-500 hover:bg-blue-600' type="submit">Enviar</Button>
+          <Button className='bg-green-700 hover:bg-green-600' type="submit">Enviar</Button>
         }
       </form>
     </div>
