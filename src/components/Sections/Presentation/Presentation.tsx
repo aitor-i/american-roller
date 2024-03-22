@@ -12,7 +12,7 @@ const dict = {
 
 export default function Presentation() {
   return (
-    <section className="w-full bg-white py-6 md:py-20 lg:py-16 xl:py-24">
+    <section className="w-full bg-white py-6 md:py-44 ">
       <div className="container flex flex-col items-center gap-4 px-4 text-center md:gap-10 lg:gap-16 lg:flex-row lg:items-start lg:justify-center xl:gap-20">
         <Image
           alt="Plumber"
@@ -30,7 +30,7 @@ export default function Presentation() {
           </div>
           <div className="flex items-center justify-center flex-col gap-2 min-[400px]:flex-row lg:gap-4">
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md border border-blue-500 bg-blue-500 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-blue-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+              className="inline-flex h-10 items-center justify-center rounded-md border border-green-700 bg-green-700 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-blue-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
               href={dict.buttonLink}
             >
               {dict.button}
