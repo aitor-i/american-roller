@@ -1,11 +1,11 @@
 import React from 'react'
-import { PhoneCallIcon, WrenchIcon } from '../Icons/Icons'
+import { LightningIcon, PhoneCallIcon, RayIcon, WrenchIcon } from '../Icons/Icons'
 
 export default function Header() {
   return (
-    <header className="flex bg-blue-500 items-center text-gray-50  justify-center h-24 gap-4 px-4 text-sm md:gap-6 lg:px-6">
+    <header className="flex bg-yellow-400 items-center text-gray-950  justify-center h-24 gap-4 px-4 text-sm md:gap-6 lg:px-6">
       <div className="flex items-center gap-2">
-        <WrenchIcon className="h-6 w-6" />
+        <LightningIcon className="h-6 w-6" />
         <span className="font-semibold md:text-xl">Plumbing Services</span>
       </div>
       <div className="ml-auto flex items-center gap-2">
