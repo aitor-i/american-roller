@@ -4,11 +4,13 @@ const dict = {
   subtitle: "Don't just take our word for it. Here's what our customers have to say about our services.",
   testimonies: [{
     title: "Professional Service 1",
-    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services."
+    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services.",
+    from: "John Smith"
   },
   {
     title: "Professional Service 2",
-    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services."
+    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services.",
+    from: "John Smith"
   }]
 }
 
@@ -28,6 +30,7 @@ export default function Testimonial() {
             <p className="text-gray-500 dark:text-gray-400">
               {testimony.description}
             </p>
+            <i className="text-gray-500 text-sm">{testimony.from}</i>
           </div>
           )}
         </div>
