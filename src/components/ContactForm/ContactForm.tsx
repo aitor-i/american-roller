@@ -3,10 +3,11 @@ import React, { useState } from 'react';
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Button } from "@/components/ui/button";
-import { MailIcon } from '../Icons/Icons';
+import { MailIcon, SettingsIcon, WrenchIcon } from '../Icons/Icons';
 
 export default function ContactForm() {
   // State for managing input validation errors
+  const [fetchingStatus, setFetchingStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errors, setErrors] = useState({
     name: '',
     surname: '',
@@ -42,6 +43,9 @@ export default function ContactForm() {
   const onSubmitHandler = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
 
+    if (fetchingStatus === 'loading') return
+    setFetchingStatus('loading')
+
     const formData = new FormData(event.currentTarget);
     const name = formData.get('name')?.toString();
     const surname = formData.get('surname')?.toString();
@@ -52,12 +56,13 @@ export default function ContactForm() {
     // Validate form inputs
     const isValid = validateForm(name, surname, email, message);
     if (!isValid) {
+      setFetchingStatus('error')
       return; // Stop the form submission if validation fails
     }
 
     const body = { name, surname, email, phone, message };
 
-    const url = new URL('http://localhost:3003/api/contact-form');
+    const url = new URL('http://localhost:3001/api/contact-form');
 
     try {
       const response = await fetch(url, {
@@ -71,7 +76,9 @@ export default function ContactForm() {
       }
       // Reset errors and potentially notify the user of success
       setErrors({ name: '', surname: '', email: '', message: '' });
+      setFetchingStatus('success')
     } catch (error) {
+      setFetchingStatus('error')
       console.error('Failed to submit form:', error);
     }
   };
@@ -100,7 +107,11 @@ export default function ContactForm() {
           <Textarea name='message' className="min-h-[10rem]" placeholder="Mensaje" />
           {errors.message && <p className="text-red-500 text-xs">{errors.message}</p>}
         </div>
-        <Button className='bg-blue-500 hover:bg-blue-600' type="submit">Enviar</Button>
+        {fetchingStatus === 'loading' ? <div className='w-full flex justify-center'>
+          <SettingsIcon className='spinner' />
+        </div> :
+          <Button className='bg-blue-500 hover:bg-blue-600' type="submit">Enviar</Button>
+        }
       </form>
     </div>
   );
