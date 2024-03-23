@@ -11,7 +11,7 @@ export default function Map() {
         </div>
       </div>
       <ContactInfo />
-      <MapComponent />
+      {/* <MapComponent /> */}
     </section>
 
   )
@@ -23,15 +23,15 @@ function ContactInfo() {
       <div className="flex items-center gap-2">
         <LocateIcon
           className="w-6 h-6 opacity-50" />
-        <span className="text-sm leading-none">SERAFIN OLAVE, 35 – BAJO - 31.007 PAMPLONA</span>
+        <span className="text-sm leading-none">C/ RIO ALZANIA, 19 11º C. 31006, PAMPLONA/IRUÑA, NAVARRA</span>
       </div>
       <div className="flex items-center gap-2">
         <PhoneIcon className="w-6 h-6 opacity-50" />
-        <span className="text-sm leading-none">948 266 157</span>
+        <span className="text-sm leading-none">948 25 74 29</span>
       </div>
       <div className="flex items-center gap-2">
         <MailIcon className="w-6 h-6 opacity-50" />
-        <span className="text-sm leading-none">cirima@cirima.es</span>
+        <span className="text-sm leading-none">iratielectricidad@telefonica.net</span>
       </div>
     </div>
   )
