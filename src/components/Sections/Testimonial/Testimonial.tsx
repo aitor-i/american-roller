@@ -1,17 +1,19 @@
 
 const dict = {
-  title: "Testimonials",
-  subtitle: "Don't just take our word for it. Here's what our customers have to say about our services.",
-  testimonies: [{
-    title: "Professional Service 1",
-    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services.",
-    from: "John Smith"
-  },
-  {
-    title: "Professional Service 2",
-    description: "The plumber arrived on time and was very professional. He quickly identified the issue with my pipes and made the necessary repairs. My plumbing has been working perfectly ever since. I highly recommend their services.",
-    from: "John Smith"
-  }]
+  "title": "Valoraciones",
+  "subtitle": "No es solo nuestra palabra... nuestros clientes también nos avalan",
+  "testimonies": [
+    {
+      "title": "Servicio Ejemplar",
+      "description": "El electricista llegó a tiempo y fue muy profesional. Identificó rápidamente el problema con mi instalación eléctrica y realizó las reparaciones necesarias. Mi sistema eléctrico ha estado funcionando perfectamente desde entonces. Recomiendo ampliamente sus servicios.",
+      "from": "John Smith"
+    },
+    {
+      "title": "Servicio Profesional",
+      "description": "El electricista no solo solucionó el problema por el que fue llamado, sino que también revisó el sistema para asegurar su correcto funcionamiento a largo plazo. Su atención al detalle y el cuidado en su trabajo me dejaron completamente satisfecho. Es evidente su compromiso con la calidad y el servicio al cliente.",
+      "from": "John Smith"
+    }
+  ]
 }
 
 export default function Testimonial() {
