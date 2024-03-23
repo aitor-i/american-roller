@@ -19,7 +19,7 @@ export default function Map() {
 
 function ContactInfo() {
   return (
-    <div className="px-4 py-12 text-gray-700 md:px-6 flex items-center gap-8">
+    <div className="px-4 flex flex-col items-start md:flex-row py-12 text-gray-700 md:px-6  gap-8">
       <div className="flex items-center gap-2">
         <LocateIcon
           className="w-6 h-6 opacity-50" />
