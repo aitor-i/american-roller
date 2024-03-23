@@ -2,9 +2,10 @@ import dynamic from 'next/dynamic'
 
 const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false })
 
-const dict = {
-  title: "Contact Us",
-  description: "Ready to experience the best plumbing services in town? Contact us to schedule an appointment or request a quote."
+const dict =
+{
+  "title": "Contáctanos",
+  "description": "Si quieres un presupuesto sin compromiso o que te resolvamos alguna duda, contacta con nosotros a través de este formulario."
 }
 
 export default function Contact() {
