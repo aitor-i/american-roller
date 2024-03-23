@@ -1,6 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
-import { LightningIcon, PhoneCallIcon, RayIcon, WrenchIcon } from '../Icons/Icons'
+import { LightningIcon, PhoneCallIcon } from '../Icons/Icons'
 
 export default function Header() {
   return (
