@@ -17,8 +17,9 @@ export function BoldIcon(props: any) {
     </svg>
   )
 }
-export const LightningIcon = () => (
+export const LightningIcon = (props: any) => (
   <svg
+    {...props}
     xmlns="http://www.w3.org/2000/svg"
     width="50"
     height="50"
