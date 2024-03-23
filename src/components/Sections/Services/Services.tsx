@@ -1,25 +1,25 @@
 
 const dict = {
-  title: "Our Services",
-  subtitle: "We offer a wide range of plumbing services to meet your needs. Let us help you with your next project or repair.",
+  title: "Servicios",
+  subtitle: "Instalaciones eléctricas en general. Instalaciones de redes telegráficas, telefónicas, telefonía sin hilos y televisión.",
   services: [
     {
-      title: "Pipe Repair",
-      description: "We can fix leaks and repair damaged pipes to ensure your plumbing system is working properly."
+      title: "Instalaciones electricas",
+      description: "Montamos instalaciones electricas a nivel industrial y a tambien a nivel domestico"
 
     }, {
-      title: "Pipe Repair2",
-      description: "We can fix leaks and repair damaged pipes to ensure your plumbing system is working properly."
+      title: "Redes telegráficas",
+      description: "Montamos instalaciones de redes telegráficas"
 
     },
     {
-      title: "Pipe Repair3",
-      description: "We can fix leaks and repair damaged pipes to ensure your plumbing system is working properly."
+      title: "Redes de telefonía",
+      description: "Tambien montamos redes de telefonía"
 
     },
     {
-      title: "Pipe Repair4",
-      description: "We can fix leaks and repair damaged pipes to ensure your plumbing system is working properly."
+      title: "Telefonía sin hilos y televisión",
+      description: "Somos expertos en instalaciones de telefonía sin hilos y en instalaciones de televisión"
 
     },
   ]
