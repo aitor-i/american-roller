@@ -4,15 +4,15 @@ import Image from "next/image"
 import image from '@/../public/home-page.webp'
 
 const dict = {
-  title: "Your Local Plumber",
-  subtitle: "Providing reliable plumbing services to your community. We fix leaks, clear clogs, and keep your water running.",
-  button: "Contact Us",
+  title: "Irati electricidad",
+  subtitle: "Instalaciones eléctricas en general. Instalaciones de redes telegráficas, telefónicas, telefonía sin hilos y televisión.",
+  button: "Contactanos",
   buttonLink: "#"
 }
 
 export default function Presentation() {
   return (
-    <section className="w-full bg-white py-6 md:py-44 ">
+    <section className="w-full pt-48 bg-white py-6 md:py-52 ">
       <div className="container flex flex-col items-center gap-4 px-4 text-center md:gap-10 lg:gap-16 lg:flex-row lg:items-start lg:justify-center xl:gap-20">
         <Image
           alt="Plumber"
