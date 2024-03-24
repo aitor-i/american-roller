@@ -1,6 +1,9 @@
-import dynamic from 'next/dynamic'
+// import dynamic from 'next/dynamic'
 
-const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false })
+import ContactForm from "@/components/ContactForm/ContactForm"
+
+
+// const ContactForm = dynamic(() => import('@/components/ContactForm/ContactForm'), { ssr: false })
 
 const dict =
 {
