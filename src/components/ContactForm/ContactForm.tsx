@@ -61,7 +61,7 @@ export default function ContactForm() {
 
     const body = { name, surname, email, phone, message };
 
-    const url = new URL('http://localhost:3001/api/contact-form');
+    const url = new URL(`${process.env.NEXT_PUBLIC_BASE_URL}/api/contact-form`);
 
     try {
       const response = await fetch(url, {
