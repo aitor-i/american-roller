@@ -16,7 +16,7 @@ export default function Presentation() {
       <div className="container flex flex-col items-center gap-4 px-4 text-center md:gap-10 lg:gap-16 lg:flex-row lg:items-start lg:justify-center xl:gap-20">
         <Image
           alt="Plumber"
-          className="mx-auto aspect-square overflow-hidden rounded-full object-cover border-4 border-gray-100 lg:w-96 xl:w-120 dark:border-gray-800"
+          className="mx-auto aspect-square overflow-hidden rounded-full object-cover border-4 border-gray-100 lg:w-96 xl:w-120 "
           height="400"
           src={image}
           width="400"
@@ -24,13 +24,13 @@ export default function Presentation() {
         <div className="space-y-4">
           <div className="space-y-2">
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none">{dict.title}</h1>
-            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed dark:text-gray-400">
+            <p className="max-w-[600px] text-gray-500 md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed ">
               {dict.subtitle}
             </p>
           </div>
           <div className="flex items-center justify-center flex-col gap-2 min-[400px]:flex-row lg:gap-4">
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md border border-green-700 bg-green-700 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-green-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 dark:border-gray-800 dark:bg-gray-950 dark:hover:bg-gray-800 dark:hover:text-gray-50 dark:focus-visible:ring-gray-300 dark:border-gray-800"
+              className="inline-flex h-10 items-center justify-center rounded-md border border-green-700 bg-green-700 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-green-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 "
               href={dict.buttonLink}
             >
               {dict.button}

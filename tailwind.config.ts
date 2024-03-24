@@ -6,10 +6,10 @@ const config: Config = {
     "./src/components/**/*.{js,ts,jsx,tsx,mdx}",
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
-  darkMode: ['variant', [
-    '@media (prefers-color-scheme: light) { &:not(.light *) }',
-    '&:is(.light *)',
-  ]],
+  // darkMode: ['variant', [
+  //   '@media (prefers-color-scheme: light) { &:not(.dark *) }',
+  //   '&:is(.light *)',
+  // ]],
   theme: {
     extend: {
       backgroundImage: {
