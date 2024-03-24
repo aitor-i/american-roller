@@ -15,7 +15,7 @@ export async function POST(req: NextRequest) {
   const { data, error } = await resend.emails.send({
     from: 'Contact <contact@steel-mountain.dev>',
     to: ['contact@aitoribarra.com'],
-    subject: 'Gracias por contactar',
+    subject: `${name} - Ha enviado un mensaje atraves de la web!`,
     react: EmailTemplate({ name, message, surname, email }),
   });
 
