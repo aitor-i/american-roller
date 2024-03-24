@@ -6,7 +6,6 @@ import { Button } from "@/components/ui/button";
 import { MailIcon, SettingsIcon, WrenchIcon } from '../Icons/Icons';
 
 export default function ContactForm() {
-  // State for managing input validation errors
   const [fetchingStatus, setFetchingStatus] = useState<'idle' | 'loading' | 'success' | 'error'>('idle')
   const [errors, setErrors] = useState({
     name: '',
@@ -74,7 +73,6 @@ export default function ContactForm() {
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
-      // Reset errors and potentially notify the user of success
       setErrors({ name: '', surname: '', email: '', message: '' });
       setFetchingStatus('success')
     } catch (error) {
@@ -111,6 +109,16 @@ export default function ContactForm() {
           <SettingsIcon className='spinner' />
         </div> :
           <Button className='bg-green-700 hover:bg-green-600' type="submit">Enviar</Button>
+        }
+        {fetchingStatus === "success" && <span className='flex gap-4'>
+          <MailIcon className="text-green-600" />
+          <p>Enviado correctamente</p>
+        </span>
+        }
+        {fetchingStatus === "error" && <span className='flex gap-4'>
+          <WrenchIcon className="text-red-600" />
+          <p>Error al enviar</p>
+        </span>
         }
       </form>
     </div>
