@@ -10,11 +10,12 @@ interface Props {
 
 export default function EmailTemplate({ name, surname, email, message }: Props) {
   return (
-    <div>
-      <h1>Nuevo mensaje</h1>
-      <h2>De: {name} {" "} {surname}</h2>
-      <i>{email}</i>
-      <p>{message}</p>
+    <div className='py-20  h-screen px-40 flex w-screen flex-col items-center'>
+      <span className='h-fit  '>
+        <h2 className='text-2xl font-bold'>{name} {" "} {surname} ha enviado un mensaje</h2>
+        <p>{message}</p>
+        <i>{email}</i>
+      </span>
     </div>
   )
 }
