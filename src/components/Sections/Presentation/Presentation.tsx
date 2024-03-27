@@ -4,10 +4,10 @@ import Image from "next/image"
 import image from '@/../public/home-page.webp'
 
 const dict = {
-  title: "Irati electricidad",
-  subtitle: "Instalaciones eléctricas en general. Instalaciones de redes telegráficas, telefónicas, telefonía sin hilos y televisión.",
-  button: "Contactanos",
-  buttonLink: "#"
+  title: "Pastelería American Roller",
+  subtitle: "Pastelería americana casera | Próxima apertura en Pamplona",
+  button: "Siguenos!",
+  buttonLink: "https://www.instagram.com/american.roller/"
 }
 
 export default function Presentation() {
@@ -30,7 +30,7 @@ export default function Presentation() {
           </div>
           <div className="flex items-center justify-center flex-col gap-2 min-[400px]:flex-row lg:gap-4">
             <Link
-              className="inline-flex h-10 items-center justify-center rounded-md border border-green-700 bg-green-700 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-green-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 "
+              className="inline-flex h-10 items-center justify-center rounded-md border border-blue-700 bg-blue-700 px-8 text-sm font-medium shadow-sm transition-colors hover:bg-blue-600 text-gray-50 focus-visible:outline-none focus-visible:ring-1 focus-visible:ring-gray-950 disabled:pointer-events-none disabled:opacity-50 "
               href={dict.buttonLink}
             >
               {dict.button}
