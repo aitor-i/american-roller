@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Bebas_Neue } from "next/font/google";
+import { Anton } from "next/font/google";
 import "./globals.css";
 
-const font = Bebas_Neue({ subsets: ["latin"], weight: ["400"] });
+const font = Anton({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Pastelería American Roller - Pastelería americana en pamplona",
