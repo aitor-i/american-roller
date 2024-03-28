@@ -4,7 +4,7 @@ import { SunIcon, PhoneCallIcon, InstagramIcon } from '../Icons/Icons'
 
 export default function Header() {
   return (
-    <header className="flex w-full fixed bg-red-500 text-gray-50 items-center font-bold justify-center h-32 gap-4 px-4 text-sm md:gap-6 lg:px-6">
+    <header className="flex w-full fixed bg-red-500 text-gray-50 items-center font-bold justify-center h-24 gap-4 px-4 text-sm md:gap-6 lg:px-6">
       <div className="flex items-center gap-2">
         <span className="font-semibold md:text-2xl lg:text-3xl">American Roller</span>
       </div>
