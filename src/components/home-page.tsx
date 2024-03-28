@@ -17,8 +17,6 @@ export function HomePage() {
         <Landing />
         <Specialtis />
         <Opinions />
-        <Contact />
-        <Map />
       </main>
       <Footer />
     </div>
