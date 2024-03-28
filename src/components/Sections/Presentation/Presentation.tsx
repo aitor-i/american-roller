@@ -12,7 +12,7 @@ const dict = {
 
 export default function Presentation() {
   return (
-    <section className="w-full pt-48 bg-white py-6 md:py-52 ">
+    <section className="w-full pt-48 bg-white py-6 md:py-64 md:pt-72 ">
       <div className="container flex flex-col items-center gap-4 px-4 text-center md:gap-10 lg:gap-16 lg:flex-row lg:items-start lg:justify-center xl:gap-20">
         <Image
           alt="Plumber"
