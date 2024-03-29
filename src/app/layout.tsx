@@ -1,8 +1,8 @@
 import type { Metadata } from "next";
-import { Anton } from "next/font/google";
+import { Lato } from "next/font/google";
 import "./globals.css";
 
-const font = Anton({ subsets: ["latin"], weight: ["400"] });
+const font = Lato({ subsets: ["latin"], weight: ["400"] });
 
 export const metadata: Metadata = {
   title: "Pastelería American Roller - Pastelería americana en pamplona",
