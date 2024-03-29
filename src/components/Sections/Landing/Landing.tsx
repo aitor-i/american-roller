@@ -15,6 +15,7 @@ export default function Landing() {
         alt="Freshly baked goods"
         className="absolute inset-0 object-cover w-full h-full blur-sm"
         height="600"
+        placeholder="blur"
         src={image}
         style={{
           aspectRatio: "1200/600",
